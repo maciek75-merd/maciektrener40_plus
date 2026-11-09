@@ -131,73 +131,20 @@
     </section>
 
     <!-- ============ OFERTA ============ -->
-    <!-- UWAGA: ceny w zakładce "Stacjonarnie" są przykładowe — uzupełnij własne. -->
     <section class="section section--alt" id="oferta" aria-labelledby="offer-title">
       <div class="container">
         <header class="section__head">
           <p class="eyebrow">Oferta</p>
           <h2 id="offer-title" class="section__title">Formy współpracy</h2>
-          <p class="section__lead">Trenuj ze mną na miejscu w Morągu albo online — z dowolnego miejsca w Polsce. Każda współpraca zaczyna się od rozmowy.</p>
+          <p class="section__lead">Trenuj ze mną online — z dowolnego miejsca w Polsce. Każda współpraca zaczyna się od rozmowy.</p>
         </header>
 
         <div class="tabs" role="tablist" aria-label="Oferta — wybierz formę współpracy">
-          <button class="tabs__btn" type="button" role="tab" id="tab-stac" aria-controls="panel-stac" aria-selected="true">Stacjonarnie</button>
-          <button class="tabs__btn" type="button" role="tab" id="tab-online" aria-controls="panel-online" aria-selected="false" tabindex="-1">Online</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-online" aria-controls="panel-online" aria-selected="true">Online</button>
           <button class="tabs__btn" type="button" role="tab" id="tab-sluzby" aria-controls="panel-sluzby" aria-selected="false" tabindex="-1"><span class="tabs__long">Służby mundurowe</span><span class="tabs__short" aria-hidden="true">Służby</span></button>
         </div>
 
-        <!-- Zakładka 1: stacjonarnie -->
-        <div class="tabs__panel" id="panel-stac" role="tabpanel" aria-labelledby="tab-stac" tabindex="0">
-        <div class="cards">
-          <article class="card">
-            <div class="card__top">
-              <h3 class="card__title">Treningi personalne stacjonarne</h3>
-              <p class="card__price"><strong>od 150 zł</strong> / sesja</p>
-            </div>
-            <p class="card__for"><span>Dla kogo:</span> osoby 40+, początkujące lub wracające po przerwie, które potrzebują pełnej kontroli techniki.</p>
-            <ul class="card__list">
-              <li>Sesje 1:1 w Morągu (60 min)</li>
-              <li>Diagnostyka na start w cenie pakietu</li>
-              <li>Plan treningowy i dziennik postępów</li>
-              <li>Pakiety 8 / 12 / 24 treningów</li>
-            </ul>
-            <a href="#kontakt" class="btn btn--outline btn--block" data-service="Treningi personalne stacjonarne">Zapisz się</a>
-          </article>
-
-          <article class="card card--featured">
-            <span class="card__tag">Najczęściej wybierane</span>
-            <div class="card__top">
-              <h3 class="card__title">Prowadzenie hybrydowe</h3>
-              <p class="card__price"><strong>od 400 zł</strong> / miesiąc</p>
-            </div>
-            <p class="card__for"><span>Dla kogo:</span> osoby trenujące samodzielnie oraz kandydaci do policji, straży i wojska przygotowujący się do testu sprawnościowego.</p>
-            <ul class="card__list">
-              <li>2 treningi stacjonarne w miesiącu</li>
-              <li>Indywidualny plan z progresją</li>
-              <li>Analiza wideo techniki</li>
-              <li>Cotygodniowy kontakt i korekty planu</li>
-            </ul>
-            <a href="#kontakt" class="btn btn--primary btn--block" data-service="Prowadzenie hybrydowe">Zapisz się</a>
-          </article>
-
-          <article class="card">
-            <div class="card__top">
-              <h3 class="card__title">Diagnostyka ruchowa</h3>
-              <p class="card__price"><strong>200 zł</strong> / jednorazowo</p>
-            </div>
-            <p class="card__for"><span>Dla kogo:</span> każdy, kto chce poznać swoje ograniczenia, asymetrie i ryzyko kontuzji przed rozpoczęciem treningów.</p>
-            <ul class="card__list">
-              <li>Wywiad i analiza historii zdrowotnej</li>
-              <li>Ocena wzorców ruchowych</li>
-              <li>Testy mobilności, stabilności i siły</li>
-              <li>Zalecenia i plan pierwszych kroków</li>
-            </ul>
-            <a href="#kontakt" class="btn btn--outline btn--block" data-service="Diagnostyka ruchowa">Zapisz się</a>
-          </article>
-        </div>
-        </div>
-
-        <!-- Zakładka 2: online -->
+        <!-- Zakładka 1: online -->
         <div class="tabs__panel" id="panel-online" role="tabpanel" aria-labelledby="tab-online" tabindex="0">
           <p class="offer__intro">Nie wierzę w drogi na skróty. Niezależnie od tego, czy potrzebujesz solidnego planu na start, czy kompleksowej, wielomiesięcznej transformacji ze wsparciem żywieniowym i analizą wideo — przeprowadzę Cię przez ten proces bez ściemy i marnowania czasu.</p>
           <div class="cards">
@@ -251,7 +198,7 @@
           </div>
         </div>
 
-        <!-- Zakładka 3: służby mundurowe -->
+        <!-- Zakładka 2: służby mundurowe -->
         <div class="tabs__panel" id="panel-sluzby" role="tabpanel" aria-labelledby="tab-sluzby" tabindex="0">
           <div class="duty">
             <div class="duty__text">
@@ -681,9 +628,6 @@
             <label for="service">Interesuje mnie</label>
             <select id="service" name="service">
               <option>Bezpłatna konsultacja</option>
-              <option>Treningi personalne stacjonarne</option>
-              <option>Prowadzenie hybrydowe</option>
-              <option>Diagnostyka ruchowa</option>
               <option>Online: Plan Treningowy 30 Dni</option>
               <option>Online: Prowadzenie 90 Dni</option>
               <option>Online: Program 6 Miesięcy</option>
