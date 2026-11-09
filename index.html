@@ -131,15 +131,23 @@
     </section>
 
     <!-- ============ OFERTA ============ -->
-    <!-- UWAGA: ceny są przykładowe — uzupełnij własne. -->
+    <!-- UWAGA: ceny w zakładce "Stacjonarnie" są przykładowe — uzupełnij własne. -->
     <section class="section section--alt" id="oferta" aria-labelledby="offer-title">
       <div class="container">
         <header class="section__head">
           <p class="eyebrow">Oferta</p>
           <h2 id="offer-title" class="section__title">Formy współpracy</h2>
-          <p class="section__lead">Wybierz model dopasowany do Twojego celu, budżetu i kalendarza. Każda współpraca zaczyna się od rozmowy.</p>
+          <p class="section__lead">Trenuj ze mną na miejscu w Morągu albo online — z dowolnego miejsca w Polsce. Każda współpraca zaczyna się od rozmowy.</p>
         </header>
 
+        <div class="tabs" role="tablist" aria-label="Oferta — wybierz formę współpracy">
+          <button class="tabs__btn" type="button" role="tab" id="tab-stac" aria-controls="panel-stac" aria-selected="true">Stacjonarnie</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-online" aria-controls="panel-online" aria-selected="false" tabindex="-1">Online</button>
+          <button class="tabs__btn" type="button" role="tab" id="tab-sluzby" aria-controls="panel-sluzby" aria-selected="false" tabindex="-1"><span class="tabs__long">Służby mundurowe</span><span class="tabs__short" aria-hidden="true">Służby</span></button>
+        </div>
+
+        <!-- Zakładka 1: stacjonarnie -->
+        <div class="tabs__panel" id="panel-stac" role="tabpanel" aria-labelledby="tab-stac" tabindex="0">
         <div class="cards">
           <article class="card">
             <div class="card__top">
@@ -186,6 +194,91 @@
             </ul>
             <a href="#kontakt" class="btn btn--outline btn--block" data-service="Diagnostyka ruchowa">Zapisz się</a>
           </article>
+        </div>
+        </div>
+
+        <!-- Zakładka 2: online -->
+        <div class="tabs__panel" id="panel-online" role="tabpanel" aria-labelledby="tab-online" tabindex="0">
+          <p class="offer__intro">Nie wierzę w drogi na skróty. Niezależnie od tego, czy potrzebujesz solidnego planu na start, czy kompleksowej, wielomiesięcznej transformacji ze wsparciem żywieniowym i analizą wideo — przeprowadzę Cię przez ten proces bez ściemy i marnowania czasu.</p>
+          <div class="cards">
+            <article class="card">
+              <div class="card__top">
+                <h3 class="card__title">Plan Treningowy 30 Dni</h3>
+                <p class="card__price"><strong>119 zł</strong> / jednorazowo</p>
+              </div>
+              <p class="card__for"><span>Dla kogo:</span> osoby średniozaawansowane, które chcą przełamać stagnację na siłowni lub wdrożyć strukturę, trenując samodzielnie.</p>
+              <ul class="card__list">
+                <li>Indywidualny plan na 3 lub 4 dni w tygodniu, dopasowany do Twojego sprzętu (siłownia lub dom)</li>
+                <li>Precyzyjne parametry: tempo, objętość i RIR — zamiast treningu do odcięcia</li>
+                <li>Wskazówki do prawidłowych wzorców ruchowych</li>
+              </ul>
+              <a href="#kontakt" class="btn btn--outline btn--block" data-service="Online: Plan Treningowy 30 Dni">Zamów plan na 30 dni</a>
+            </article>
+
+            <article class="card card--featured">
+              <span class="card__tag">Najczęściej wybierane</span>
+              <div class="card__top">
+                <h3 class="card__title">Prowadzenie Online 90 Dni</h3>
+                <p class="card__price"><strong>499 zł</strong> / 3 miesiące</p>
+                <p class="card__note">ok. 166 zł miesięcznie</p>
+              </div>
+              <p class="card__for"><span>Dla kogo:</span> osoby, które chcą zrzucić zbędne kilogramy lub zbudować czystą masę mięśniową i potrzebują kogoś, kto rozliczy je z postępów.</p>
+              <ul class="card__list">
+                <li>Indywidualny plan modyfikowany w cyklach miesięcznych</li>
+                <li>Elastyczna strategia żywieniowa — bez głodówek, z produktów ze zwykłego sklepu</li>
+                <li>Analiza wideo techniki kluczowych ćwiczeń</li>
+                <li>Cotygodniowe raporty i korekty planu</li>
+              </ul>
+              <a href="#kontakt" class="btn btn--primary btn--block" data-service="Online: Prowadzenie 90 Dni">Rozpocznij transformację</a>
+            </article>
+
+            <article class="card">
+              <div class="card__top">
+                <h3 class="card__title">Program Długofalowy: Siła i Sprawność</h3>
+                <p class="card__price"><strong>899 zł</strong> / 6 miesięcy</p>
+                <p class="card__note">ok. 150 zł miesięcznie</p>
+              </div>
+              <p class="card__for"><span>Dla kogo:</span> osoby, które traktują zdrowie i sylwetkę jako długoterminową inwestycję i chcą przejść pełny cykl periodyzacji.</p>
+              <ul class="card__list">
+                <li>Wszystko z pakietu 90 dni</li>
+                <li>Zaawansowana periodyzacja: fale siłowe, hipertroficzne i regeneracyjne</li>
+                <li>Priorytetowa opieka i analizy wideo bez limitu</li>
+                <li>Audyt nawyków żywieniowych i suplementacji</li>
+                <li>Priorytetowy kontakt przez Messenger lub WhatsApp</li>
+              </ul>
+              <a href="#kontakt" class="btn btn--outline btn--block" data-service="Online: Program 6 Miesięcy">Zainwestuj w 6 miesięcy</a>
+            </article>
+          </div>
+        </div>
+
+        <!-- Zakładka 3: służby mundurowe -->
+        <div class="tabs__panel" id="panel-sluzby" role="tabpanel" aria-labelledby="tab-sluzby" tabindex="0">
+          <div class="duty">
+            <div class="duty__text">
+              <p class="duty__kicker">Policja · Wojsko · Straż Graniczna · Straż Pożarna · SOP</p>
+              <h3 class="duty__title">Trening pod specyfikę służby. Bez zbędnego gadania.</h3>
+              <p>W Twojej pracy nie ma miejsca na kontuzje z powodu źle dobranej rutyny. Jako funkcjonariusz potrzebujesz bezawaryjności, mocnego gorsetu mięśniowego (chroniącego kręgosłup pod sprzętem), wytrzymałości tlenowej i siły użytkowej.</p>
+              <p>Opracuję dla Ciebie program, który realnie przełoży się na Twoje bezpieczeństwo i wyniki w terenie — bez względu na to, czy pracujesz na zmiany, czy przygotowujesz się do trudnych testów sprawnościowych.</p>
+            </div>
+
+            <article class="card card--featured duty__card">
+              <span class="card__tag">Pakiet mundurowy</span>
+              <div class="card__top">
+                <h3 class="card__title">Sprawność i Gotowość Bojowa (90 Dni)</h3>
+                <p class="card__price"><strong>450 zł</strong> / 3 miesiące</p>
+                <p class="card__note">Cena specjalna dla służb · ok. 150 zł miesięcznie</p>
+              </div>
+              <p class="card__for"><span>Dla kogo:</span> funkcjonariusze policji, żołnierze, strażacy oraz osoby przygotowujące się do testów sprawnościowych do służb. Dla tych, dla których trening to nie „pompowanie bicepsa do lustra”, ale narzędzie pracy chroniące zdrowie i życie w terenie.</p>
+              <ul class="card__list">
+                <li><strong>Specjalistyczny plan treningowy (3 miesiące):</strong> trening funkcjonalny, wytrzymałość siłowa, zdrowy kręgosłup (obciążenia pasem taktycznym i kamizelką) oraz profilaktyka kontuzji kolan i odcinka lędźwiowego</li>
+                <li><strong>Moduł przygotowania do testów (opcjonalnie):</strong> specyfika oficjalnych testów sprawności fizycznej poszczególnych formacji — bieg wahadłowy, rzut piłką lekarską, tor przeszkód, podciąganie, brzuszki</li>
+                <li><strong>Strategia żywieniowa bez restrykcji:</strong> elastyczne podejście dopasowane do pracy zmianowej, nocek, dyżurów i gotowości do akcji</li>
+                <li><strong>Analiza wideo techniki:</strong> zarzuty, martwe ciągi, wyciskania i praca z odważnikami kulowymi — tak, by unikać kontuzji wyłączających ze służby</li>
+                <li><strong>Stały kontakt i raporty online:</strong> cotygodniowy raport dopasowany do grafiku służbowego</li>
+              </ul>
+              <a href="#kontakt" class="btn btn--primary btn--block" data-service="Online: Pakiet mundurowy 90 Dni">Zgłoś się do pakietu mundurowego</a>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -591,6 +684,10 @@
               <option>Treningi personalne stacjonarne</option>
               <option>Prowadzenie hybrydowe</option>
               <option>Diagnostyka ruchowa</option>
+              <option>Online: Plan Treningowy 30 Dni</option>
+              <option>Online: Prowadzenie 90 Dni</option>
+              <option>Online: Program 6 Miesięcy</option>
+              <option>Online: Pakiet mundurowy 90 Dni</option>
               <option>Przygotowanie do testu sprawnościowego</option>
               <option>Plan treningowy dla mężczyzn</option>
               <option>Plan treningowy dla kobiet</option>

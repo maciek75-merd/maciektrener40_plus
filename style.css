@@ -303,6 +303,24 @@ address { font-style: normal; }
 .card__title { font-size: 1.3rem; margin-bottom: 10px; }
 .card__price { font-size: .9rem; }
 .card__price strong { color: var(--text); font-size: 1.5rem; font-weight: 700; letter-spacing: -.02em; }
+.card__note { margin-top: 4px; font-size: .82rem; color: var(--accent); font-weight: 500; }
+.offer__intro {
+  max-width: 760px; margin-bottom: 36px; padding-left: 18px;
+  border-left: 3px solid var(--accent); font-size: 1.05rem; color: #d4d4d4; font-style: italic;
+}
+#oferta .tabs { margin-bottom: 36px; }
+
+/* Oferta: służby mundurowe */
+.duty { display: grid; gap: 32px; align-items: start; }
+.duty__kicker { font-size: .74rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+.duty__title { font-size: clamp(1.4rem, 3.5vw, 1.9rem); margin-bottom: 18px; }
+.duty__text p:not(.duty__kicker) { font-size: 1.02rem; margin-bottom: 14px; }
+.duty__card .card__list strong { color: var(--text); font-weight: 600; }
+@media (min-width: 1024px) {
+  .duty { grid-template-columns: 5fr 7fr; gap: 64px; }
+  .duty__text { position: sticky; top: calc(var(--header-h) + 32px); }
+  .duty__card.card--featured, .duty__card.card--featured:hover { transform: none; }
+}
 .card__for { font-size: .95rem; margin-bottom: 20px; }
 .card__for span { color: var(--text); font-weight: 600; }
 .card__list { display: grid; gap: 10px; margin-bottom: 30px; flex-grow: 1; }
@@ -332,8 +350,12 @@ address { font-style: normal; }
   overflow-x: auto; scrollbar-width: none; width: max-content; max-width: 100%;
 }
 @media (max-width: 599px) {
-  .tabs { display: grid; grid-template-columns: repeat(3, 1fr); width: 100%; border-radius: 16px; }
+  .tabs { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; width: 100%; border-radius: 16px; }
   .tabs__btn { padding: 10px 6px; font-size: .88rem; border-radius: 12px; }
+  .tabs__long { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+@media (min-width: 600px) {
+  .tabs__short { display: none; }
 }
 .tabs::-webkit-scrollbar { display: none; }
 .tabs__btn {
