@@ -26,7 +26,7 @@
     "telephone": "+48502482787",
     "email": "maciek75@vp.pl",
     "image": "img/maciej-erdon-portret.webp",
-    "sameAs": ["https://www.facebook.com/maciej.erdon", "https://repspolska.pl/trener/Maciej-Erdon/REPS-TR-12152"],
+    "sameAs": ["https://www.facebook.com/maciej.erdon/", "https://www.instagram.com/maciektrener_40plus/","https://repspolska.pl/trener/Maciej-Erdon/REPS-TR-12152"],
     "address": { "@type": "PostalAddress", "postalCode": "14-300", "addressLocality": "Morąg", "addressCountry": "PL" }
   }
   </script>
@@ -50,6 +50,7 @@
           <li><a href="#metodologia" class="nav__link">Metodologia</a></li>
           <!-- <li><a href="#efekty" class="nav__link">Efekty</a></li> -->
           <li><a href="#przepisy" class="nav__link">Przepisy</a></li>
+          <li><a href="https://maciektrener40plus.pl/artykuly/" class="nav__link" data-wp-link="artykuly">Artykuły</a></li>
           <li><a href="#faq" class="nav__link">FAQ</a></li>
           <li><a href="#kontakt" class="nav__link">Kontakt</a></li>
         </ul>
@@ -473,41 +474,187 @@
         <div class="plans__intro">
           <header class="section__head">
             <p class="eyebrow">Paliwo dla organizmu</p>
-            <h2 id="recipes-title" class="section__title">Kuchnia łącząca światy: energia, białko i smak</h2>
-            <p class="section__lead">Autorskie przepisy inspirowane kuchnią europejską i azjatycką, stworzone z myślą o regeneracji i czystej masie mięśniowej.</p>
+            <h2 id="recipes-title" class="section__title">Jedzenie, które pracuje na Twój trening</h2>
+            <p class="section__lead">Tu jedzenie to nie tylko kulinarna przyjemność, ale narzędzie: wspiera trening, przyspiesza regenerację i oszczędza Twój czas.</p>
           </header>
-          <div class="plans__text">
-            <p>Dieta nie musi być nudna. W mojej kuchni eksperymentuję, łącząc tradycyjne techniki europejskie z wyrazistymi, azjatyckimi smakami. Skupiam się na wysokiej jakości białku (mięso i drób), nieprzetworzonych składnikach oraz kompozycjach, które idealnie wspierają regenerację po ciężkim treningu siłowym.</p>
-          </div>
+          <ul class="food-pillars" aria-label="Na czym opierają się przepisy">
+            <li>
+              <h3>Konkretny cel w liczbach</h3>
+              <p>Przy każdym przepisie pełne makro i kalorie. Wysoka gęstość odżywcza i min. 30–40 g białka na porcję — bez zgadywania.</p>
+            </li>
+            <li>
+              <h3>Oszczędność czasu</h3>
+              <p>Minimum składników, jedna patelnia, garnek lub blender. Przygotowanie w 5–20 minut.</p>
+            </li>
+            <li>
+              <h3>Produkty z każdego sklepu</h3>
+              <p>Jajka, twaróg, chude mięso, płatki owsiane, ryż, warzywa — zwykłe, nieprzetworzone, bez drogich „superfoods”.</p>
+            </li>
+            <li>
+              <h3>Praktyczność na co dzień</h3>
+              <p>Dania dobrze znoszą przechowywanie, odgrzewanie i pakowanie do pudełek — dieta zostaje w ryzach nawet w najbardziej zabiegany dzień.</p>
+            </li>
+          </ul>
         </div>
 
-        <div class="recipes">
-          <!-- Zdjęcia potraw: własne (img/przepis-*.jpg, 900 px). Oryginały leżą obok w folderze img. -->
-          <article class="recipe">
-            <div class="recipe__media recipe__media--photo">
-              <img src="img/przepis-wolowina-po-tajsku.jpg" alt="Wołowina po tajsku z makaronem ryżowym, brokułem, papryką i groszkiem cukrowym w misce" width="900" height="900" loading="lazy" decoding="async" style="object-position: center 60%">
-              <span>Kuchnia azjatycka</span>
-            </div>
-            <div class="recipe__body">
-              <ul class="plan__meta"><li>Po treningu</li><li>Źródło żelaza</li><li>Szybkie</li></ul>
-              <h3 class="recipe__title">Wołowina po tajsku z makaronem ryżowym i warzywami stir-fry</h3>
-              <p>Szybkie, bogate w pełnowartościowe białko i żelazo danie o niskim stopniu przetworzenia, idealne na posiłek po treningu siłowym.</p>
-              <p class="recipe__soon">Pełny przepis wkrótce</p>
-            </div>
-          </article>
+        <div class="recipe-cats">
+          <!-- Zdjęcia potraw: img/przepis-*.jpg (1000 px). Przepisy źródłowe: folder Przepisy (pliki .docx). -->
 
-          <article class="recipe">
-            <div class="recipe__media recipe__media--photo">
-              <img src="img/przepis-kurczak-z-batatami.jpg" alt="Kurczak duszony z batatami, ciecierzycą i jarmużem w żeliwnym garnku i misce" width="900" height="900" loading="lazy" decoding="async" style="object-position: center 45%">
-              <span>Kuchnia europejska</span>
+          <!-- Kategoria 1 -->
+          <section class="recipe-cat" aria-labelledby="cat-1-title">
+            <header class="recipe-cat__head">
+              <span class="recipe-cat__num" aria-hidden="true">01</span>
+              <div>
+                <h3 id="cat-1-title" class="recipe-cat__title">Szybkie posiłki potreningowe</h3>
+                <p class="recipe-cat__desc">15-minutówki i „one-pot” – lekkostrawne, niskotłuszczowe, idealne po wysiłku.</p>
+              </div>
+            </header>
+            <div class="recipes">
+              <article class="recipe">
+                <div class="recipe__media recipe__media--photo">
+                  <img src="img/przepis-indyk-kasza-jaglana.jpg" alt="Polędwiczka z indyka z kaszą jaglaną i cukinią w misce" width="1000" height="750" loading="lazy" decoding="async">
+                  <span>One-pot · 15 min</span>
+                </div>
+                <div class="recipe__body">
+                  <ul class="macros" aria-label="Makroskładniki na porcję">
+                    <li><strong>~510</strong> kcal</li><li><strong>46 g</strong> białka</li><li><strong>50 g</strong> węgl.</li><li><strong>12 g</strong> tłuszczu</li>
+                  </ul>
+                  <h4 class="recipe__title">Polędwiczka z indyka w jednym garnku z kaszą jaglaną, cukinią i ziołami</h4>
+                  <p>Jeden garnek, kwadrans i pełnowartościowy posiłek po treningu. Makro na 1 z 2 porcji.</p>
+                  <details class="recipe__details">
+                    <summary>Pokaż przepis</summary>
+                    <h5>Składniki (2 porcje)</h5>
+                    <ul>
+                      <li>400 g chudej piersi z indyka</li>
+                      <li>100 g suchej kaszy jaglanej</li>
+                      <li>1 średnia cukinia</li>
+                      <li>1 łyżka oliwy</li>
+                      <li>bulion warzywny lub woda</li>
+                      <li>majeranek, sól, pieprz</li>
+                    </ul>
+                    <h5>Przygotowanie</h5>
+                    <ol>
+                      <li>W głębokim rondlu rozgrzej oliwę, wrzuć pokrojonego w kostkę indyka i podsmażaj przez 3 minuty.</li>
+                      <li>Dodaj przepłukaną kaszę jaglaną oraz pokrojoną w kostkę cukinię.</li>
+                      <li>Zalej całość bulionem (w proporcji 1:2,5 z kaszą), dopraw majerankiem, solą i pieprzem.</li>
+                      <li>Przykryj i duś na wolnym ogniu przez około 12–15 minut, aż kasza wchłonie płyn i zmięknie.</li>
+                    </ol>
+                  </details>
+                </div>
+              </article>
+
+              <article class="recipe">
+                <div class="recipe__media recipe__media--photo">
+                  <img src="img/przepis-kurczak-z-batatami.jpg" alt="Kurczak duszony z batatami, ciecierzycą i jarmużem w żeliwnym garnku i misce" width="900" height="900" loading="lazy" decoding="async" style="object-position: center 45%">
+                  <span>One-pot</span>
+                </div>
+                <div class="recipe__body">
+                  <ul class="plan__meta"><li>Wysokobiałkowe</li><li>Jednogarnkowe</li><li>Regeneracja</li></ul>
+                  <h4 class="recipe__title">Kurczak z batatami, ciecierzycą i jarmużem z jednego garnka</h4>
+                  <p>Rozgrzewające danie łączące pełnowartościowe białko z węglowodanami złożonymi z batatów — tradycyjny smak i nowoczesne makro, które wspiera regenerację.</p>
+                  <p class="recipe__soon">Pełny przepis wkrótce</p>
+                </div>
+              </article>
+
+              <article class="recipe">
+                <div class="recipe__media recipe__media--photo">
+                  <img src="img/przepis-wolowina-po-tajsku.jpg" alt="Wołowina po tajsku z makaronem ryżowym, brokułem, papryką i groszkiem cukrowym w misce" width="900" height="900" loading="lazy" decoding="async" style="object-position: center 60%">
+                  <span>15-minutówka</span>
+                </div>
+                <div class="recipe__body">
+                  <ul class="plan__meta"><li>Po treningu</li><li>Źródło żelaza</li><li>Szybkie</li></ul>
+                  <h4 class="recipe__title">Wołowina po tajsku z makaronem ryżowym i warzywami stir-fry</h4>
+                  <p>Szybkie, bogate w pełnowartościowe białko i żelazo danie o niskim stopniu przetworzenia, idealne na posiłek po treningu siłowym.</p>
+                  <p class="recipe__soon">Pełny przepis wkrótce</p>
+                </div>
+              </article>
             </div>
-            <div class="recipe__body">
-              <ul class="plan__meta"><li>Wysokobiałkowe</li><li>Jednogarnkowe</li><li>Regeneracja</li></ul>
-              <h3 class="recipe__title">Kurczak z batatami, ciecierzycą i jarmużem z jednego garnka</h3>
-              <p>Rozgrzewające danie łączące pełnowartościowe białko z węglowodanami złożonymi z batatów — tradycyjny smak i nowoczesne makro, które wspiera regenerację.</p>
-              <p class="recipe__soon">Pełny przepis wkrótce</p>
+          </section>
+
+          <!-- Kategoria 2 -->
+          <section class="recipe-cat" aria-labelledby="cat-2-title">
+            <header class="recipe-cat__head">
+              <span class="recipe-cat__num" aria-hidden="true">02</span>
+              <div>
+                <h3 id="cat-2-title" class="recipe-cat__title">Słodkie śniadania białkowo-węglowodanowe</h3>
+                <p class="recipe-cat__desc">Dla trenujących rano lub na zachcianki bez psucia bilansu.</p>
+              </div>
+            </header>
+            <div class="recipes recipes--single">
+              <article class="recipe">
+                <div class="recipe__media recipe__media--photo">
+                  <img src="img/przepis-placki-twarogowe.jpg" alt="Placki twarogowe polane musem malinowym na talerzu" width="1000" height="750" loading="lazy" decoding="async">
+                  <span>Śniadanie · 15 min</span>
+                </div>
+                <div class="recipe__body">
+                  <ul class="macros" aria-label="Makroskładniki na porcję">
+                    <li><strong>~460</strong> kcal</li><li><strong>42 g</strong> białka</li><li><strong>52 g</strong> węgl.</li><li><strong>9 g</strong> tłuszczu</li>
+                  </ul>
+                  <h4 class="recipe__title">Wysokobiałkowe placki twarogowe z musem malinowym i płatkami owsianymi</h4>
+                  <p>Słodkie śniadanie, które syci na długo i nie psuje bilansu. Makro na 1 porcję.</p>
+                  <details class="recipe__details">
+                    <summary>Pokaż przepis</summary>
+                    <h5>Składniki (1 porcja)</h5>
+                    <ul>
+                      <li>150 g chudego twarogu</li>
+                      <li>50 g zmielonych płatków owsianych</li>
+                      <li>1 jajko + 1 białko jajka</li>
+                      <li>odrobina słodzika (np. erytrytol)</li>
+                      <li>100 g malin (świeżych lub mrożonych)</li>
+                    </ul>
+                    <h5>Przygotowanie</h5>
+                    <ol>
+                      <li>W misce zblenduj lub dokładnie rozgnieć widelcem twaróg, dodaj jajko, białko, płatki owsiane i słodzik — wymieszaj na gładką masę.</li>
+                      <li>Smaż małe placki na rozgrzanej patelni z powłoką nieprzywierającą bez tłuszczu (lub ze sprayem do smażenia) po 2–3 minuty z każdej strony.</li>
+                      <li>Maliny lekko podgrzej w rondelku, tworząc szybki mus, i polej nim gotowe placuszki.</li>
+                    </ol>
+                  </details>
+                </div>
+              </article>
             </div>
-          </article>
+          </section>
+
+          <!-- Kategoria 3 -->
+          <section class="recipe-cat" aria-labelledby="cat-3-title">
+            <header class="recipe-cat__head">
+              <span class="recipe-cat__num" aria-hidden="true">03</span>
+              <div>
+                <h3 id="cat-3-title" class="recipe-cat__title">Szybkie koktajle, szejki i posiłki płynne</h3>
+                <p class="recipe-cat__desc">Po późnych wieczornych treningach lub przy budowaniu masy, gdy brakuje apetytu na stałe jedzenie.</p>
+              </div>
+            </header>
+            <div class="recipes recipes--single">
+              <article class="recipe">
+                <div class="recipe__media recipe__media--photo">
+                  <img src="img/przepis-szejk-ryzowy.jpg" alt="Waniliowy szejk ryżowy w wysokiej szklance, obok łyżka masła orzechowego" width="1000" height="750" loading="lazy" decoding="async" style="object-position: 40% center">
+                  <span>Szejk · 5 min</span>
+                </div>
+                <div class="recipe__body">
+                  <ul class="macros" aria-label="Makroskładniki na porcję">
+                    <li><strong>~490</strong> kcal</li><li><strong>45 g</strong> białka</li><li><strong>50 g</strong> węgl.</li><li><strong>12 g</strong> tłuszczu</li>
+                  </ul>
+                  <h4 class="recipe__title">Waniliowy szejk ryżowy z izolatem jajecznym i masłem orzechowym</h4>
+                  <p>Pełnowartościowy posiłek do wypicia — sprawdzi się po późnym treningu, nie obciążając układu pokarmowego w nocy. Makro na 1 porcję.</p>
+                  <details class="recipe__details">
+                    <summary>Pokaż przepis</summary>
+                    <h5>Składniki (1 porcja)</h5>
+                    <ul>
+                      <li>50 g płatków ryżowych błyskawicznych (lub zmielonego ryżu)</li>
+                      <li>30 g białka (np. izolat białka jajecznego lub serwatkowego o smaku waniliowym)</li>
+                      <li>15 g naturalnego masła orzechowego (1 łyżka)</li>
+                      <li>300 ml mleka 1,5% lub napoju roślinnego</li>
+                    </ul>
+                    <h5>Przygotowanie</h5>
+                    <ol>
+                      <li>Płatki ryżowe zalej wrzątkiem (ok. 100 ml) i odstaw na 3 minuty, aby zmiękły.</li>
+                      <li>Do blendera wrzuć namoczone płatki, dolej mleko, wsyp odżywkę białkową i dodaj masło orzechowe.</li>
+                      <li>Zblenduj na gładką, kremową konsystencję.</li>
+                    </ol>
+                  </details>
+                </div>
+              </article>
+            </div>
+          </section>
         </div>
 
         <p class="recipes__cta">Chcesz posiłki dopasowane do Twojego planu treningowego? <a href="#kontakt">Zapytaj o wytyczne żywieniowe →</a></p>
@@ -610,10 +757,19 @@
               <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
               <div><span>E-mail</span><a href="mailto:maciek75@vp.pl">maciek75@vp.pl</a></div>
             </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v4H8v7h4v-7h3l1-4h-4V7.5A1 1 0 0 1 13 6.5h2Z"/></svg>
+              <div><span>Facebook</span><a href="https://www.facebook.com/maciej.erdon/" target="_blank" rel="noopener">facebook.com/maciej.erdon</a></div>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg>
+              <div><span>Instagram</span><a href="https://www.instagram.com/maciektrener_40plus/" target="_blank" rel="noopener">@maciektrener_40plus</a></div>
+            </li>
           </ul>
 
           <ul class="socials" aria-label="Media społecznościowe">
-            <li><a href="https://www.facebook.com/maciej.erdon" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v4H8v7h4v-7h3l1-4h-4V7.5A1 1 0 0 1 13 6.5h2Z"/></svg></a></li>
+            <li><a href="https://www.facebook.com/maciej.erdon/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h-2.5A4.5 4.5 0 0 0 8 7.5V10H5.5v4H8v7h4v-7h3l1-4h-4V7.5A1 1 0 0 1 13 6.5h2Z"/></svg></a></li>
+            <li><a href="https://www.instagram.com/maciektrener_40plus/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></a></li>
           </ul>
         </div>
 
@@ -679,6 +835,7 @@
           <li><a href="#oferta">Oferta</a></li>
           <li><a href="#plany">Plany treningowe</a></li>
           <li><a href="#przepisy">Przepisy</a></li>
+          <li><a href="https://maciektrener40plus.pl/artykuly/" data-wp-link="artykuly">Artykuły</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="https://repspolska.pl/trener/Maciej-Erdon/REPS-TR-12152" target="_blank" rel="noopener">Profil REPs</a></li>
           <li><a href="#">Polityka prywatności</a></li>

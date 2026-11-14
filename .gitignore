@@ -1,3 +1,9 @@
 # Oryginalne, duże zdjęcia (na stronie używane są zoptymalizowane kopie img/przepis-*.jpg)
 img/Kurczak z batatami.jpeg
 img/Wołowina po tajsku.jpeg
+
+# Paczka motywu WordPress (budowana skryptem zbuduj-motyw-wordpress.ps1)
+wordpress/
+
+# Źródłowe przepisy (Word) — na stronie są gotowe teksty i zdjęcia img/przepis-*.jpg
+Przepisy/

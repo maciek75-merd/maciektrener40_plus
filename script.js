@@ -26,13 +26,14 @@
   desktop.addEventListener('change', (e) => { if (e.matches) setMenu(false); });
 
   /* ---------- Aktywny link w nawigacji ---------- */
-  const links = [...document.querySelectorAll('.nav__link')];
-  const sections = links.map((l) => document.querySelector(l.getAttribute('href'))).filter(Boolean);
-  if ('IntersectionObserver' in window) {
+  // tylko linki do sekcji na tej samej stronie (np. "#oferta" albo "https://…/#oferta" na stronie głównej)
+  const links = [...document.querySelectorAll('.nav__link')].filter((l) => l.hash && l.pathname === location.pathname);
+  const sections = links.map((l) => document.getElementById(l.hash.slice(1))).filter(Boolean);
+  if ('IntersectionObserver' in window && sections.length) {
     const spy = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        links.forEach((l) => l.classList.toggle('is-active', l.getAttribute('href') === '#' + entry.target.id));
+        links.forEach((l) => l.classList.toggle('is-active', l.hash === '#' + entry.target.id));
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
     sections.forEach((s) => spy.observe(s));
@@ -101,12 +102,18 @@
   /* ---------- Przyciski "Zapisz się" → wybór usługi w formularzu ---------- */
   const serviceSelect = document.getElementById('service');
   document.querySelectorAll('[data-service]').forEach((btn) => {
-    btn.addEventListener('click', () => { serviceSelect.value = btn.dataset.service; });
+    btn.addEventListener('click', () => {
+      if (serviceSelect) { serviceSelect.value = btn.dataset.service; return; }
+      // WordPress (WPForms): wpisz wybrany pakiet do pola wiadomości, jeśli jest puste
+      const msg = document.querySelector('.wpforms-container textarea');
+      if (msg && !msg.value.trim()) msg.value = 'Interesuje mnie: ' + btn.dataset.service + '\n\n';
+    });
   });
 
   /* ---------- Formularz: walidacja po stronie klienta ---------- */
   const form = document.getElementById('contact-form');
   const success = document.getElementById('form-success');
+  if (form) {
 
   const rules = {
     name: (v) => v.trim().length >= 2 || 'Podaj imię i nazwisko.',
@@ -152,6 +159,7 @@
     success.hidden = false;
     setTimeout(() => { success.hidden = true; }, 8000);
   });
+  }
 
   /* ---------- Animacja pojawiania się sekcji ---------- */
   if ('IntersectionObserver' in window && !reduceMotion) {
@@ -169,5 +177,6 @@
   }
 
   /* ---------- Rok w stopce ---------- */
-  document.getElementById('year').textContent = new Date().getFullYear();
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
 })();
