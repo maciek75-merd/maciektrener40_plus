@@ -7,3 +7,11 @@ wordpress/
 
 # Źródłowe przepisy (Word) — na stronie są gotowe teksty i zdjęcia img/przepis-*.jpg
 Przepisy/
+
+# Prywatne pliki robocze (nie publikować)
+Moje zdjęcia/
+Treningi_pdf/
+img/*.png
+img/O mnie
+img/Zdjęcie na główną stronę
+

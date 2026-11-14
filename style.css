@@ -21,7 +21,7 @@
   --section-y: clamp(72px, 12vw, 140px);
   --ease: cubic-bezier(.2, .7, .2, 1);
 
-  --hero-image: url("img/trening-kettlebell.jpg");
+  --hero-image: url("img/hero-maciej-kettlebell.webp");
 }
 
 /* =========================================================
@@ -175,7 +175,7 @@ address { font-style: normal; }
     linear-gradient(180deg, rgba(10,10,10,.45) 0%, rgba(10,10,10,.55) 35%, rgba(10,10,10,.92) 70%, var(--bg) 100%),
     var(--hero-image),
     linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 60%);
-  background-size: cover; background-position: 55% 30%;
+  background-size: cover; background-position: center 15%;
 }
 @media (min-width: 768px) {
   .hero__media {
@@ -184,19 +184,19 @@ address { font-style: normal; }
       linear-gradient(180deg, transparent 60%, var(--bg) 100%),
       var(--hero-image),
       #0d0d0d;
-    background-size: cover; background-position: right 30% center;
+    background-size: cover; background-position: center 18%;
   }
 }
 /* Desktop: zdjęcie po prawej, tekst na czystym tle po lewej */
 @media (min-width: 1024px) {
   .hero__media {
-    left: 38%;
+    left: 46%;
     background:
       linear-gradient(90deg, var(--bg) 0%, rgba(10,10,10,.55) 22%, rgba(10,10,10,0) 50%),
       linear-gradient(180deg, rgba(10,10,10,.5) 0%, transparent 25%, transparent 70%, var(--bg) 100%),
       var(--hero-image),
       #0d0d0d;
-    background-size: cover; background-position: 30% center;
+    background-size: cover; background-position: center 18%;
   }
   .hero__media::after { display: none; }
   .hero__title { max-width: 13ch; }
@@ -783,3 +783,8 @@ h4, h5 { color: var(--text); line-height: 1.25; letter-spacing: -.01em; font-wei
   #przepisy .plans__intro { grid-template-columns: 1fr; gap: 32px; }
   .food-pillars { grid-template-columns: repeat(4, 1fr); }
 }
+
+/* Miniatury planów treningowych */
+.plan__thumb { margin: -6px -4px 22px; border-radius: calc(var(--radius) - 4px); overflow: hidden; border: 1px solid var(--border); background: #111; }
+.plan__thumb img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: 75% center; transition: transform .6s var(--ease); }
+.plan:hover .plan__thumb img { transform: scale(1.04); }
